@@ -1,0 +1,24 @@
+nav {
+    margin: auto;
+    background-color: purple;
+    width: 100%;
+    display: flex;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    max-width: 85px;
+}
+  
+nav a:hover {
+    background-color: orange;
+}
+.activelink{
+    background-color: aqua;
+    color: black;
+}

@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfAppProject3.bhThemas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppProject3"
+        mc:Ignorable="d"
+        Title="bhThemas" Height="600" Width="1050" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Stemmen.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="30" Background="#FF0CBF0C" Foreground="White" Height="40" Grid.ColumnSpan="2" TextAlignment="Center" FontWeight="Bold" >Beheer thema's</TextBlock>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBlock FontSize="18" Background="#FF0CBF0C" Foreground="White" Width="150" TextAlignment="Center" FontWeight="Bold" >Thema</TextBlock>
+            <TextBlock FontSize="16" Background="#FF0CBF0C" Foreground="Black" Width="80" TextAlignment="Center" FontWeight="Bold" >Wijzig</TextBlock>
+            <TextBlock FontSize="16" Background="#FF0CBF0C" Foreground="Black" Width="80" TextAlignment="Center" FontWeight="Bold" >Verwijder</TextBlock>
+        </StackPanel>
+        <ListBox x:Name="databaseitems" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="340" Height="350">
+
+        </ListBox>
+        <StackPanel x:Name="spZoek" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" Visibility="Visible">
+            <TextBox x:Name="tbZoekCreateUpdate" Width="200" Height="30" FontSize="14" TextAlignment="Center"></TextBox>
+            <Button x:Name="btZoekCreateUpdate" Width="120" Height="30" FontSize="17" Click="btZoekCreateUpdate_Click">Zoek</Button>
+        </StackPanel>
+        <Button x:Name="btGoBack" Grid.Row="3" Grid.Column="2" Width="100" Height="40" Content="Terug" FontSize="20" Background="White" FontWeight="Bold" Click="btGoBack_Click"></Button>
+        <Button x:Name="btCreate" Grid.Row="1" Grid.Column="1" Width="100" Height="30" Content="Nieuw" FontSize="20" Background="Wheat" FontWeight="Bold" VerticalAlignment="Bottom" Click="btCreate_Click"></Button>
+    </Grid>
+</Window>

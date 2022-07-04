@@ -1,0 +1,20 @@
+header {
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 7px 0px 7px 10px;
+}
+header img {
+    height: 100%;
+}
+
+footer {
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 0px 10px 0px 10px;
+}

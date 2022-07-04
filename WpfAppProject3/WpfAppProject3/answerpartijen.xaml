@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppProject3.answerpartijen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppProject3"
+        mc:Ignorable="d"
+        Title="answerpartijen" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Stemmen.jpg"></ImageBrush>
+        </Grid.Background>
+        <StackPanel>
+            <TextBlock FontSize="35" Background="#FF511DBC" Foreground="White" Height="50" VerticalAlignment="Top" Margin="0,20,0,0" TextAlignment="Center" FontWeight="Bold">Welke partijen zijn het (on)eens?</TextBlock>
+            <TextBlock x:Name="tbStatusPartij" TextAlignment="Center" Background="Black" Width="200" Foreground="White" FontWeight="Bold" FontSize="18" Margin="0,10,0,0">Partij 0 van 0</TextBlock>
+            <TextBlock TextAlignment="Center" Background="White" FontSize="15" Margin="0,10,0,0">Klik op eens als deze partij het eens is met de stelling. Anders klikt u op oneens</TextBlock>
+            <TextBlock x:Name="tbStelling" TextAlignment="Center" Background="White" FontSize="15" Margin="0,00,0,0">Stelling: </TextBlock>
+            <TextBlock x:Name="tbPartij" Width="500" Height="40" Margin="0,10,0,0" Background="White" TextAlignment="Center" Padding="3" TextWrapping="Wrap" FontSize="23">Test</TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button x:Name="btEens" Background="LightGreen" Width="100" Height="40" Content="Eens" FontSize="25" FontWeight="Bold" Click="btEens_Click"></Button>
+                <Button x:Name="btOneens" Background="Red" Width="100" Height="40" Content="Oneens" FontSize="25" FontWeight="Bold" Margin="20,0,0,0" Click="btOneens_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
